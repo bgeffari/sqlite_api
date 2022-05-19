@@ -13,7 +13,8 @@ echo  $result["result"];
     
 }elseif(isset($_GET['timedate'])){
 
-    echo time()."| Next Alarm AAA" ;
+    $result = time()."|Next Alarm AAA|Active Profile (Profile 1)" ;
+    echo json_encode(explode("|",$result));
 
 
 }elseif(isset($_GET['profiles'])){
